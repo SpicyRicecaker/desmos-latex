@@ -1,0 +1,12 @@
+{
+  "web": {
+    "client_id": "576784526755-nsmtauo9pv2139hpoag8rs5jdkmnikae.apps.googleusercontent.com",
+    "project_id": "quickstart-1602790659553",
+    "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+    "token_uri": "https://oauth2.googleapis.com/token",
+    "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+    "client_secret": "59k58orkGx-5_Z_Dlabu6V5x",
+    "javascript_origins": ["http://localhost:8000"]
+  }
+}
+AIzaSyCBMagj_Ly0EWpHPSfnGMJ0Z35_HPuoOC8 
