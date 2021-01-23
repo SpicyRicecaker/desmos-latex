@@ -1,8 +1,27 @@
 {
-  "private": "true",
-  "workspaces": [
-    "frontend",
-    "backend",
-    "common"
-  ]
+  "name": "desmos-latex",
+  "version": "1.0.0",
+  "description": "",
+  "main": ".eslintrc.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SpicyRicecaker/desmos-latex.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SpicyRicecaker/desmos-latex/issues"
+  },
+  "homepage": "https://github.com/SpicyRicecaker/desmos-latex#readme",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.14.0",
+    "@typescript-eslint/parser": "^4.14.0",
+    "eslint": "^7.18.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "typescript": "^4.1.3"
+  }
 }
