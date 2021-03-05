@@ -1,0 +1,5 @@
+- Pandoc throws errors when you have empty aligns
+  - [ ] Don't generate empty aligns (use regex for hack?)
+- Pandoc throws errors when you have intertext
+  - [ ] Create a flag for intertext (which requires extension)
+- Need to create an extension that does this automatically without copy paste
