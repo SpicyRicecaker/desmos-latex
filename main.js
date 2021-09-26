@@ -1,9 +1,8 @@
-/* eslint-disable no-console */
+/* global Calc */
 // Desmos API can be found @ https://www.desmos.com/api/v1.5/docs/index.html
 //
 // Get list of all cells using the Desmos API
 (() => {
-  // eslint-disable-next-line no-undef
   const exps = Calc.getState().expressions.list;
 
   class DesmosLatex {
@@ -106,7 +105,7 @@
     // Try copying result to clipboard
     // eslint-disable-next-line no-undef
     copy(dL.getOutput);
-    console.log('Successfully copied to clipboard.');
+    console.log('You can now paste into your `.tex` file');
   } catch (e) {
     // Otherwise just log the result
     console.log(dL.getOutput);
