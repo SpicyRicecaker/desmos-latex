@@ -1,8 +1,8 @@
 /* global Calc */
 // Desmos API can be found @ https://www.desmos.com/api/v1.5/docs/index.html
 //
-// Get list of all cells using the Desmos API
 (() => {
+  // Get list of all cells using the Desmos API
   const exps = Calc.getState().expressions.list;
 
   class DesmosLatex {

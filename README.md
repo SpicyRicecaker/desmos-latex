@@ -4,7 +4,7 @@ On Desmos, go to your desired graph and open the developer console by pressing `
 
 ```javascript
 (() => {
-  // eslint-disable-next-line no-undef
+  // Get list of all cells using the Desmos API
   const exps = Calc.getState().expressions.list;
 
   class DesmosLatex {
@@ -107,7 +107,7 @@ On Desmos, go to your desired graph and open the developer console by pressing `
     // Try copying result to clipboard
     // eslint-disable-next-line no-undef
     copy(dL.getOutput);
-    console.log('Successfully copied to clipboard.');
+    console.log('You can now paste into your `.tex` file');
   } catch (e) {
     // Otherwise just log the result
     console.log(dL.getOutput);
