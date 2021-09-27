@@ -71,8 +71,8 @@ On Desmos, go to your desired graph and open the developer console by pressing `
       // If it is an equation
       case 'expression': {
         // Make sure it's not empty
-        if ('latex' in exps) {
-          dL.append(DesmosLatex.alignEquals(exps.latex));
+        if ('latex' in exp) {
+          dL.append(DesmosLatex.alignEquals(exp.latex));
         } else {
           // Otherwise treat the linebreak as a new align environment
           // TODO
@@ -84,14 +84,14 @@ On Desmos, go to your desired graph and open the developer console by pressing `
       // If it's just regular old text
       case 'text': {
         // Replace `$$` with `\(\)` as it's more accurate
-        dL.append(DesmosLatex.createIntertext(exps.text));
+        dL.append(DesmosLatex.createIntertext(exp.text));
         break;
       }
       // If it's a folder
       case 'folder': {
         // End our current align environment and add a section
         dL.endEnv();
-        dL.append(DesmosLatex.createSection(exps.title));
+        dL.append(DesmosLatex.createSection(exp.title));
         dL.beginEnv();
         break;
       }
